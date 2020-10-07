@@ -1,4 +1,4 @@
-# Tutorial 2
+# Tutorial 4
 
 > Objetivo del nivel: Usar Clases y analizar el momento de la instanciación.
 > Objetivos secundatios:  Generación de números aleatorios. Se usan colecciones. Se puede usar un abstract factory.
