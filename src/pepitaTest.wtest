@@ -5,7 +5,7 @@ import extras.*
 
 describe "Tests de Pepita" {
 
-	fixture {
+	method initialize() {
 		// El game no se reinicia en cada test: https://github.com/uqbar-project/wollok/issues/1896
 		game.clear()
 	}
