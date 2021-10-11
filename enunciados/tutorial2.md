@@ -9,7 +9,8 @@ Como Pepita pierde energía al moverse, vamos a necesitar que pueda comer las co
 
 
 ### Requerimientos
-- Configurar las teclas arriba y abajo para que mueva a Pepita a las respectivas posiciones. Pepita debe gastar energía al volar dicha distancia.
+- Pepita comienza con energía = 100.
+- Configurar las teclas arriba y abajo para que mueva a Pepita a las respectivas posiciones. Pepita debe gastar energía al volar dicha distancia, considerar la distancia recorrida, y asumir que gasta 9 joules de energía por cada kilómetro volado.
 - Hacer que Pepita se vea gris al quedarse sin energía. Además, no debería poder moverse una vez que se quedó sin energía.
 - Configurar la C para que Pepita coma la comida sobre la que está parada. Al comer una comida, pepita aumenta su energía correspondiente a la otorgada por la comida y ésta última desaparece del juego.
 > Para obtener el objeto con el que pepita se encuentra colisionando usar el mensaje `game.uniqueCollider(pepita)`.
