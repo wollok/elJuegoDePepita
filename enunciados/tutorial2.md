@@ -18,3 +18,4 @@ Como Pepita pierde energía al moverse, vamos a necesitar que pueda comer las co
   - Antes de mover a pepita, controlar que no se vaya del rango visible del juego.
   - Luego de moverse, si se queda sin energía, terminar el juego.
   - Utilizar el evento `onTick` para agregar gravedad, haciendo que pepita pierda altura cada `800` milisegundos, es decir, descienda su coordenada `y` en 1, pero _sin perder energía_.
+  - Agregar muros y paredes por los cuales pepita no puede atravesarlos
