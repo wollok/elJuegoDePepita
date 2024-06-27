@@ -9,7 +9,14 @@ En este repositorio se encuentran los siguientes enunciados:
 - [Tutorial 3](/enunciados/tutorial3.md): Agregar más acciones configurando colisiones.
 - [Tutorial 4](/enunciados/tutorial4.md): Agregar comidas.
 
-## Documentación
+## Documentación [ToDo actualizar a TS]
 Pueden encontrar una explicación de Wollok Game en la [página de conceptos del sitio](https://www.wollok.org/documentacion/conceptos/) -> **Sección Game**.
 
 También tienen los _WollokDoc_ accesibles desde el IDE o [en el sitio](https://www.wollok.org/documentacion/wollokdoc/) -> **Paquete game.wlk**.
+
+## Correr el juego
+
+Corriendo una terminal sobre el directorio del proyecto, ejecutar:
+```bash
+wollok run pepitaGame.PepitaGame -g
+```
