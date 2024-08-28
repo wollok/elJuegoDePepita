@@ -1,35 +1,10 @@
-import extras.*
-import wollok.game.*
 
 object pepita {
+	var energia = 100
 
-	var property energia = 100
-	var property position = game.origin()
+	method estaCansada() = energia <= 20
 
-	method image() {
-		return if (self.estaEnElNido()) "pepita-grande.png" else "pepita.png"
+	method vola(metros) {
+		energia = energia - metros * 10
 	}
-
-	method come(comida) {
-		energia = energia + comida.energiaQueOtorga()
-	}
-
-	method vola(kms) {
-		energia = energia - kms * 9
-	}
-
-	method irA(nuevaPosicion) {
-		self.vola(position.distance(nuevaPosicion))
-		position = nuevaPosicion
-	}
-
-	method estaCansada() {
-		return energia <= 0
-	}
-
-	method estaEnElNido() {
-		return position == nido.position()
-	}
-
 }
-

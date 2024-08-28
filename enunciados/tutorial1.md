@@ -2,10 +2,13 @@
 
 > Objetivo del nivel: familiarizarse con el framework
 
-### Contexto
-Pepita es una golondrina que puede moverse libremente por el juego. Su objetivo es llegar al nido, es por eso que se muestra más grande al llegar a él. Para lograrlo debe evitar a Silvestre, un gato que está atento a sus pasos desde el piso.
-
 ### Requerimientos
-- Hacer que Silvestre persiga a Pepita. Silvestre siempre se mueve a la altura del piso, pero va persiguiendo a Pepita hacia los lados, según donde ella se mueva.
-- Hacer que Pepita se vea gris al ser atrapada por Silvestre. Esto es, que se muestre con la imagen `pepita-gris` al estar en la misma posición que Silvestre.
-- **BONUS**: Silvestre no puede estar a la izquierda del eje x = 3, siendo éste el mínimo valor de x permitido para la posición de Silvestre.
+
+Pepita es una golondrina que puede comer y volar, al hacerlo sube y baja su energía respectivamente.
+
+- Para ello, pepita debe recordar su energía, que al iniciar debe ser de 100 calorías.
+- Este estado es interno y no es prudente que preguntarle por su energía a pepita. En cambio, podemos preguntarle si está cansada, a lo que pepita contesta afirmativamente si su energía se reduce a menos de 20 calorías.
+- Al volar consume energía, a razón de 10 calorías por metro.
+- Al comer, aumenta su energía en función de las calorías que otorga la comida. Queremos que pepita pueda comer de todo pero inicialmente tenemos dos posibles comidas:
+  - El alpiste, que otorga 5 calorías.
+  - La manzana, que otorga 4 calorías por gramo. Por defecto una manzana pesa 250 gramos, pero queremos que ese peso se pueda modificar.
