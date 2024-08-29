@@ -4,7 +4,7 @@ object pepita {
 
 	method estaCansada() = energia <= 20
 
-	method vola(metros) {
+	method volar(metros) {
 		energia = energia - metros * 10
 	}
 
