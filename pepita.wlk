@@ -18,8 +18,13 @@ object alpiste {
 }
 
 object manzana {
-	var gramos = 240
-
-	method definirGramos(cuantosGramos) { gramos = cuantosGramos }
-	method energia() = gramos * 3
+	var madurez = 1
+	
+	method energiaQueOtorga() {
+		return 0.8 * madurez	
+	}
+	
+	method madurar() {
+		madurez += 10
+	}
 }

@@ -15,7 +15,6 @@ Pepita es una golondrina que puede comer y volar, al hacerlo sube y baja su ener
 - Al volar consume energía, a razón de 10 calorías por metro.
 - Al comer, aumenta su energía en función de las calorías que otorga la comida. Queremos que pepita pueda comer de todo pero inicialmente tenemos dos posibles comidas:
   - El alpiste, que otorga 5 calorías.
-  - La manzana, que otorga 1 caloría cada 3 gramos. Por defecto una manzana pesa 240 gramos, pero queremos que ese peso se pueda modificar.
 
 ## Código provisto
 
@@ -28,6 +27,14 @@ Pepita es una golondrina que puede comer y volar, al hacerlo sube y baja su ener
 - Luego de comer alpiste, sigue cansada
 - Si, en cambio, hacemos que coma una manzana, ya no está cansada.
 
-Desafío
+## Desafío: manzanas madurando
 
-- Si ya viste el error, en lugar de corregirlo, primero pensemos tests que permitan detectarlo.
+En el caso de las manzanas, la cantidad de calorías que otorgan depende de su nivel maduración.
+
+- Modelamos la maduración de la manzana como un porcentaje, de 0 a 100, y queremos que la manzana entienda un mensaje "madurar", que primero la hace madurar y, pasado cierto tiempo, pudrirse.
+- Inicialmente la manzana otorga 50 calorías.
+- La maduración se da de a saltos de 10%, hasta llegar al 100% de maduración en el que la manzana otorga 100 calorías.
+- Luego, la manzana comienza a pudrirse, y cada vez que recibe el mensaje "madurar" debe perder 20 calorías.
+- En ningún caso la manzana podrida puede otorgar menos de 0 calorías.
+
+La manzana que tenemos no cumple con los objetivos, pero antes de corregirla escribamos los tests que la ponen a prueba.
