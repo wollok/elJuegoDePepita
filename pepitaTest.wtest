@@ -1,0 +1,40 @@
+import pepita.*
+
+test "Al iniciar pepita no está cansada" {
+  assert.notThat(pepita.estaCansada())
+}
+
+test "Si la hacemos volar 9 metros, se cansa" {
+  // Preparación
+
+  // Ejercitación
+  pepita.volar(9)
+
+  // Verificación
+  assert.that(pepita.estaCansada())
+}
+
+test "Luego de comer alpiste, sigue cansada" {
+  // Preparación
+  pepita.volar(9)
+
+  // Ejercitación
+  pepita.comer(alpiste)
+
+  // Verificación
+  assert.that(pepita.estaCansada())
+}
+
+test "Si come de nuevo alpiste, ya no está cansada" {
+  // Preparación
+  pepita.volar(9)
+  pepita.comer(alpiste)
+
+  // Ejercitación
+  pepita.comer(alpiste)
+
+  // Verificación
+  assert.notThat(pepita.estaCansada())
+}
+
+

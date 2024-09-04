@@ -25,6 +25,8 @@ Pepita es una golondrina que puede comer y volar, al hacerlo sube y baja su ener
 - Al iniciar pepita no está cansada.
 - Si la hacemos volar 9 metros, se cansa
 - Luego de comer alpiste, sigue cansada
+- Si come de nuevo alpiste, ya no está cansada.
+
 - Si, en cambio, hacemos que coma una manzana, ya no está cansada.
 
 ## Desafío: manzanas madurando

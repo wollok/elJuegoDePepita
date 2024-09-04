@@ -2,7 +2,7 @@
 object pepita {
 	var energia = 100
 
-	method estaCansada() = energia <= 20
+	method estaCansada() = energia < 20
 
 	method volar(metros) {
 		energia = energia - metros * 10
