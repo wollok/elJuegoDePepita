@@ -1,6 +1,15 @@
 
 object pepita {
 	var energia = 100
+	var position = game.at(1,8)
+
+	method position() = position
+	method position(newPos) {
+		self.volar(1)
+		position = newPos
+	}
+
+	method image() = "pepita.png"
 
 	method estaCansada() = energia < 20
 
