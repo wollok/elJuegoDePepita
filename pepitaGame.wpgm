@@ -7,6 +7,9 @@ program PepitaGame {
 	game.width(10)
 	game.boardGround("fondo2.jpg")
 
+	game.addVisual(manzana)
+	game.addVisual(silvestre)
+	game.addVisual(nido)
 	game.addVisual(pepita)
 
 	keyboard.right().onPressDo({ 
@@ -18,17 +21,19 @@ program PepitaGame {
 	})
 
 	keyboard.up().onPressDo({ 
-		console.println(game.colliders(pepita))
-		console.println(game.colliders(pepita).isEmpty())
+		//console.println(game.colliders(pepita))
+		//console.println(game.colliders(pepita).isEmpty())
 		pepita.position(pepita.position().up(1))
 	})
 
 	keyboard.space().onPressDo({
 		game.say(pepita, 
-			if (pepita.estaCansada()) "Estoy cansado jefe"
-			else "Estoy para volar!"
+			(if (pepita.estaCansada()) "Estoy cansado jefe "
+			else "Estoy para volar! ") + pepita.energia()
 		)
 	})
+
+	game.onCollideDo(pepita, {cosa => cosa.reaccionar(pepita) })
 
 
 	game.onTick(2000, "movimiento", { 
