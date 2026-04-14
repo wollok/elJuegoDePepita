@@ -10,6 +10,6 @@ En este repositorio se encuentran los siguientes enunciados:
 - [Tutorial 4](/enunciados/tutorial4.md): Agregar comidas.
 
 ## Documentación
-Pueden encontrar una explicación de Wollok Game en la [página de conceptos del sitio](https://www.wollok.org/documentacion/conceptos/) -> **Sección Game**.
+Pueden encontrar una explicación de Wollok Game en la [página de conceptos](https://www.wollok.org/documentation/wollok_game/).
 
-También tienen los _WollokDoc_ accesibles desde el IDE o [en el sitio](https://www.wollok.org/documentacion/wollokdoc/) -> **Paquete game.wlk**.
+También tienen los _WollokDoc_ accesibles desde el IDE o [en el sitio](https://www.wollok.org/documentation/language/#wollok.game).
