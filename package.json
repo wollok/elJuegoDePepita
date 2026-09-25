@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "wollokVersion": "4.0.0",
   "author": "npasserini",
-  "license": "ISC"
+  "license": "ISC",
+  "resourceFolder": "assets"
 }

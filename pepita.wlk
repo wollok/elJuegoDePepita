@@ -1,13 +1,15 @@
-
 object pepita {
 	var energia = 100
-
+	var property position = game.at(1, 1)
+	
+	method image() = "pepita.png"
+	
 	method estaCansada() = energia < 20
-
+	
 	method volar(metros) {
-		energia = energia - metros * 10
+		energia -= metros * 10
 	}
-
+	
 	method comer(comida) {
 		energia += comida.energia()
 	}
@@ -20,9 +22,7 @@ object alpiste {
 object manzana {
 	var madurez = 1
 	
-	method energiaQueOtorga() {
-		return 0.8 * madurez	
-	}
+	method energiaQueOtorga() = 0.8 * madurez
 	
 	method madurar() {
 		madurez += 10
